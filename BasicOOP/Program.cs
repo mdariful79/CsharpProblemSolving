@@ -16,3 +16,7 @@ person3.firstName = "Ami 1st Constructor";
 Person person4 = new Person("2nd Constructor", "used Here");
 Console.WriteLine(person3.GetName("??"));
 Console.WriteLine(person4.GetName("**"));
+
+Person person5 = new Person("Arbin", "");
+person5.lastName = "Islam";
+Console.WriteLine(person5.GetName("||"));
