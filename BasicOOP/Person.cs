@@ -2,24 +2,50 @@
 
 class Person
 {
-    public string firstName; //field or variable
-    public string lastName;
+    private string firstName; //field or variable
+    public string LastName { get; set; } // auto-implemented property
 
+    public string FirstName // property
+    {
+        get 
+        {
+            if (string.IsNullOrEmpty(firstName))
+            {
+                return string.Empty;
+
+            }
+            return firstName; 
+        }
+        set
+        {
+            if (!string.IsNullOrEmpty(value))
+            {
+                firstName = value;
+
+            }
+        } 
+    }
+ 
     public Person() // Empty constructor
     {
         firstName = string.Empty;
-        lastName = string.Empty;
+        LastName = string.Empty;
 
     }
     public Person(string fName, string lName) // Perameterized constructor
     {
         firstName = fName;
-        lastName = lName;
+        LastName = lName;
     }
  
     public string GetName(string seperator) // method   
     {
-        string fullName = firstName + seperator + lastName;
+        string fullName = firstName + seperator + LastName;
+        return fullName;
+    }
+    public string GetName(string[] seperator) // method overloading 
+    {
+        string fullName = firstName + seperator[0] + LastName;
         return fullName;
     }
 }
