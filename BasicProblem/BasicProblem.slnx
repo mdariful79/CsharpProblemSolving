@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../BasicOOP/BasicOOP.csproj" Id="af453ee6-15c3-44dd-b7c5-ee9caaa06b80" />
+  <Project Path="BasicProblem.csproj" />
+</Solution>
