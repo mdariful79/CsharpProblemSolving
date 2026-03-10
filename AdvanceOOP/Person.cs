@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace AdvanceOOP
 {
-    public class Person
+    public abstract class Person
     {
-        protected int[] grades;
         public string firstName { get; set; }
         public string lastName { get; set; }
+
+        protected int[] grades;
+
+
+        public string Id 
+        {
+            get
+            {
+                return GetId();
+            }
+        }
         public Person(int size) // Constructor
         {
             grades = new int[size];
@@ -23,6 +33,7 @@ namespace AdvanceOOP
         {
             this.grades = grades;
         }
+        public abstract string GetId(); // Abstract method
 
     }
 }
