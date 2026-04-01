@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../AdvanceOOP/AdvanceOOP.csproj" Id="0a03fa1d-f284-4cfe-b83f-32bb6dd6b8ca" />
   <Project Path="../BasicOOP/BasicOOP.csproj" Id="af453ee6-15c3-44dd-b7c5-ee9caaa06b80" />
+  <Project Path="../ExGeneric/ExGeneric.csproj" Id="e7274368-d3cc-4242-baa9-d0f5f6708d4f" />
   <Project Path="BasicProblem.csproj" />
 </Solution>
